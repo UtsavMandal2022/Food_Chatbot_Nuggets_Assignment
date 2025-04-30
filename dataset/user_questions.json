@@ -1,0 +1,98 @@
+[
+    {
+        "section": "ingredients",
+        "field": "ingredients",
+        "question": "What are the ingredients?",
+        "field_id": 1
+    },
+    {
+        "section": "calories",
+        "field": "calories",
+        "question": "How many calories does it have?",
+        "field_id": 2
+    },
+    {
+        "section": "nutritional",
+        "field": "total fat (PDV)",
+        "question": "How much total fat does it contain?",
+        "field_id": 3
+    },
+    {
+        "section": "nutritional",
+        "field": "sugar (PDV)",
+        "question": "What is the sugar content?",
+        "field_id": 4
+    },
+    {
+        "section": "nutritional",
+        "field": "sodium (PDV)",
+        "question": "How much sodium is in this dish?",
+        "field_id": 5
+    },
+    {
+        "section": "nutritional",
+        "field": "protein (PDV)",
+        "question": "What is the protein content?",
+        "field_id": 6
+    },
+    {
+        "section": "nutritional",
+        "field": "saturated fat (PDV)",
+        "question": "How much saturated fat is present?",
+        "field_id": 7
+    },
+    {
+        "section": "nutritional",
+        "field": "carbohydrates (PDV)",
+        "question": "What are the carbohydrate levels?",
+        "field_id": 8
+    },
+    {
+        "section": "preparation",
+        "field": "minutes",
+        "question": "How long does it take to prepare?",
+        "field_id": 9
+    },
+    {
+        "section": "steps",
+        "field": "steps",
+        "question": "What are the steps to prepare this dish?",
+        "field_id": 10
+    },
+    {
+        "section": "tags",
+        "field": "tags",
+        "question": "What tags are associated with this dish?",
+        "field_id": 11
+    },
+    {
+        "section": "rating",
+        "field": "rating",
+        "question": "What is the rating of this dish?",
+        "field_id": 12
+    },
+    {
+        "section": "review",
+        "field": "review",
+        "question": "Can you provide a review?",
+        "field_id": 13
+    },
+    {
+        "section": "category",
+        "field": "rating_category",
+        "question": "What category does this dish fall under?",
+        "field_id": 14
+    },
+    {
+        "section": "calorie_status",
+        "field": "calorie_status",
+        "question": "What is the calorie status of this dish?",
+        "field_id": 15
+    },
+    {
+        "section": "price",
+        "field": "price",
+        "question": "What is the price of this dish?",
+        "field_id": 16
+    }
+]

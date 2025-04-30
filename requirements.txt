@@ -1,0 +1,9 @@
+python-dotenv
+openai
+pandas
+scikit-learn
+python-dotenv
+streamlit
+groq
+sentence-transformers
+
