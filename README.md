@@ -34,3 +34,20 @@ cd zomato-rag-chatbot
 python -m venv venv
 source venv/bin/activate   # Windows: venv\Scripts\activate
 pip install -r requirements.txt
+
+
+🔐 Environment Variables
+Create a .env file and add the following:
+
+env
+Copy
+Edit
+API_HOST=huggingface
+HUGGINGFACEHUB_API_TOKEN=your_huggingface_api_key
+HUGGINGFACE_MODEL=bitext/Mistral-7B-Restaurants
+▶️ Run the App
+bash
+Copy
+Edit
+streamlit run app.py
+Open http://localhost:8501 in your browser to start using the chatbot.
