@@ -34,7 +34,7 @@ cd zomato-rag-chatbot
 python -m venv venv
 source venv/bin/activate   # Windows: venv\Scripts\activate
 pip install -r requirements.txt
-
+```
 
 🔐 Environment Variables
 Create a .env file and add the following:
