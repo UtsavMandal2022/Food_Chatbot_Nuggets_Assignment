@@ -11,12 +11,39 @@ load_dotenv()
 import os
 from sklearn.feature_extraction.text import CountVectorizer
 from tqdm.auto import tqdm
+import requests
 
 # Setup the OpenAI client to use either Groq, OpenAI.com, or Ollama API
-API_HOST = os.getenv("API_HOST")
+API_HOST = os.environ.get("API_HOST")
+print("API_HOST", API_HOST)
 
-
-if API_HOST == "groq":
+if API_HOST == "hf":
+    MODEL_NAME = "bitext/Mistral-7B-Restaurants"
+    HF_API_KEY = os.environ.get("HF_API_KEY")
+    def hf_llm(prompt):
+        headers = {
+            "Authorization": f"Bearer {HF_API_KEY}",
+            "Content-Type": "application/json"
+        }
+        payload = {
+            "inputs": prompt,
+            "parameters": {
+                "temperature": 0.7,
+                "top_p": 0.9,
+                "max_new_tokens": 512
+            }
+        }
+        response = requests.post(
+            f"https://api-inference.huggingface.co/models/{MODEL_NAME}",
+            headers=headers,
+            json=payload
+        )
+        if response.status_code == 200:
+            return response.json()[0]['generated_text'], {}
+        else:
+            raise Exception(f"HuggingFace API error: {response.status_code} - {response.text}")
+            
+elif API_HOST == "groq":
     client = client = Groq(
     api_key=os.environ.get("GROQ_API_KEY"),
     )

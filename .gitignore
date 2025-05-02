@@ -5,6 +5,7 @@ __pycache__/
 
 .env
 .env.ollama
+myenv
 
 
 # C extensions

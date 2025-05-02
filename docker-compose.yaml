@@ -15,7 +15,7 @@ services:
       context: .
       dockerfile: Dockerfile
     environment:
-      GROQ_API_KEY: xai-U2L1Lu0DA9Ar7PbL0R5xdqzLAgdKHfLbaAP6gw6xocZ1f92Fnxw6h4bwc1frqM6xvhAg3SQ54LLTx0m3
+      GROQ_API_KEY: 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
       DATA_PATH: "dataset/main_faq_database.json"
     ports:
       - "${APP_PORT:-8501}:8501"
